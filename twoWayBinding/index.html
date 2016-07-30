@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <title></title>
+</head>
+<body ng-app="testApp">
+
+    <div class="signUpForm">
+        <form ng-controller="testCtrl">
+            <div class="bg-{{color}}">
+                <label>邮箱：
+                    <input type="email" ng-model="userInfo.email">
+                </label>
+            </div>
+            <br>
+            <div ng-class="{error:isError,warning:isWarning}">
+                {{messageText}}
+                <label>密码：
+                    <input type="password" ng-model="userInfo.password">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>自动登录：
+                    <input type="checkbox" ng-model="userInfo.autoLogin">
+                </label>
+            </div>
+            <br>
+            <div class="getUserData">
+                <button ng-click= 'getUserData()'>获取信息</button>
+            </div>
+            <br>
+            <div class="setUserData">
+                <button ng-click= 'setUserData()'>设置信息</button>
+            </div>
+            <br>
+            <div class="deleUserData">
+                <button ng-click= 'deleUserData()'>清空信息</button>
+            </div>
+            <br>
+            <div>
+                <button ng-click= 'showError()'>改变背景色</button>
+            </div>
+            <br>
+            <div>
+                <button ng-click= 'showWarning()'>改变背景色</button>
+            </div>
+        </form>
+    </div>
+
+    <hello>
+        <div>dlsjflskdj</div>
+    </hello>
+    <!-- <div class="hello"></div> -->
+    <!-- directive:hello -->
+
+
+
+
+
+  <!--   <div ng-app="test" ng-controller="ParentController">
+        <div ng-controller="ChildController">
+            <a ng-click="sayHello()">Say Hello!</a>
+        </div>
+        {{person}}
+    </div> -->
+
+   <!--  <div ng-app="myApp">
+        {{name}}
+    </div>
+ -->
+
+<!-- <div ng-controller="MyController">
+    <input type="text" ng-model="expr" placeholder="Enter an expression">
+    <h2>{{parseValue}}</h2>
+</div> -->
+
+
+
+    <script src="js/lib/angular/angular.js"></script>
+    <script src="js/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

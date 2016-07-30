@@ -1,0 +1,21 @@
+/*
+* @Author: lijingfx
+* @Date:   2016-07-30 13:26:40
+* @Last Modified by:   lijingfx
+* @Last Modified time: 2016-07-30 13:40:49
+*/
+.bg-red {
+  background: red;
+}
+
+.bg-green {
+  background: green;
+}
+
+.error {
+  background: blue;
+}
+
+.warning {
+  background: pink;
+}
